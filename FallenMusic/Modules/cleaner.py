@@ -29,7 +29,7 @@ from config import OWNER_ID
 from FallenMusic import app
 
 
-@app.on_message(filters.command(["clearcache", "rmdownloads"]) & filters.user(OWNER_ID))
+@app.on_message(filters.command(["clearcache", "rmdownloads", "مسح ذاكرة التخزين"]) & filters.user(OWNER_ID))
 async def clear_misc(_, message: Message):
     try:
         await message.delete()

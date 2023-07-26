@@ -45,7 +45,7 @@ buttons = InlineKeyboardMarkup(
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+            text="اضف البوت في المجموعة",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
@@ -58,7 +58,7 @@ pm_buttons = [
         InlineKeyboardButton(
             text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://t.me/d8_8q"
         ),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="🥀 المطور 🥀", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -78,7 +78,7 @@ gp_buttons = [
         InlineKeyboardButton(
             text="☁️ sᴏᴜʀᴄᴇ ☁️", url="https://t.me/d8_8q"
         ),
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text="🥀 المطور 🥀", user_id=config.OWNER_ID),
     ],
 ]
 
@@ -95,8 +95,8 @@ helpmenu = [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="fallen_home"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="رجوع", callback_data="fallen_home"),
+        InlineKeyboardButton(text="اغلاق", callback_data="close"),
     ],
 ]
 
@@ -104,7 +104,7 @@ helpmenu = [
 help_back = [
     [InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=config.SUPPORT_CHAT)],
     [
-        InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="fallen_help"),
-        InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
+        InlineKeyboardButton(text="رجوع", callback_data="fallen_help"),
+        InlineKeyboardButton(text="اغلاق", callback_data="close"),
     ],
 ]

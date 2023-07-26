@@ -30,7 +30,7 @@ from config import OWNER_ID
 from FallenMusic import ASS_MENTION, SUNAME, app, app2
 
 
-@app.on_message(filters.command(["leaveall", "assleaveall"]) & filters.user(OWNER_ID))
+@app.on_message(filters.command(["leaveall", "assleaveall", "غادر"]) & filters.user(OWNER_ID))
 async def ass_leaveall(_, message: Message):
     lear = await message.reply_text(f"» {ASS_MENTION} sᴛᴀʀᴛᴇᴅ ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛs...")
     left = 0

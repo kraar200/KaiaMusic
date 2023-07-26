@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 kraar200
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -36,7 +36,7 @@ from FallenMusic import BOT_NAME, SUDOERS, app
 from FallenMusic.Modules import ALL_MODULES
 
 
-@app.on_message(filters.command(["stats", "sysstats"]) & SUDOERS)
+@app.on_message(filters.command(["stats", "sysstats","م"]) & SUDOERS)
 async def sys_stats(_, message: Message):
     sysrep = await message.reply_text(
         f"ɢᴇᴛᴛɪɴɢ {BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs, ɪᴛ'ʟʟ ᴛᴀᴋᴇ ᴀ ᴡʜɪʟᴇ..."
@@ -106,7 +106,7 @@ async def sys_stats(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="ᴄʟᴏsᴇ",
+                        text="اغلاق",
                         callback_data=f"forceclose abc|{message.from_user.id}",
                     ),
                 ]

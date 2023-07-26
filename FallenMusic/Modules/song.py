@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 kraar200
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -32,7 +32,7 @@ from youtube_search import YoutubeSearch
 from FallenMusic import BOT_MENTION, BOT_USERNAME, LOGGER, app
 
 
-@app.on_message(filters.command(["song", "vsong", "video", "music"]))
+@app.on_message(filters.command(["song", "vsong", "video", "music","تحميل"]))
 async def song(_, message: Message):
     try:
         await message.delete()
@@ -55,10 +55,10 @@ async def song(_, message: Message):
     except Exception as ex:
         LOGGER.error(ex)
         return await m.edit_text(
-            f"ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴛ-ᴅʟ.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+            f"فشل احضار المسار ʏᴛ-ᴅʟ.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
         )
 
-    await m.edit_text("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢ,\n\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    await m.edit_text("» تحميل الاغنيه,\n\nالرجاء الانتضار...")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)

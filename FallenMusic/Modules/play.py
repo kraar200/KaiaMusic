@@ -60,7 +60,7 @@ from FallenMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
 
 
 @app.on_message(
-    filters.command(["play", "vplay", "p"])
+    filters.command(["play", "vplay", "p", "تشغيل", "شغل"])
     & filters.group
     & ~filters.forwarded
     & ~filters.via_bot
@@ -127,7 +127,7 @@ async def play(_, message: Message):
             pass
         except Exception as ex:
             return await fallen.edit_text(
-                f"ғᴀɪʟᴇᴅ ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
+                f"kaia ᴛᴏ ɪɴᴠɪᴛᴇ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
             )
         try:
             await app2.resolve_peer(invitelink)
@@ -195,7 +195,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             LOGGER.error(str(e))
-            return await fallen.edit("» ғᴀɪʟᴇᴅ ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
+            return await fallen.edit("» kaia ᴛᴏ ᴘʀᴏᴄᴇss ᴏ̨ᴜᴇʀʏ, ᴛʀʏ ᴘʟᴀʏɪɴɢ ᴀɢᴀɪɴ...")
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit(

@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 kraar200
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@ from FallenMusic import BOT_NAME, app
 
 
 @app.on_message(
-    filters.command(["config", "variables"]) & filters.user(config.OWNER_ID)
+    filters.command(["config", "variables","المعلومات"]) & filters.user(config.OWNER_ID)
 )
 async def get_vars(_, message: Message):
     try:
@@ -54,7 +54,7 @@ async def get_vars(_, message: Message):
             disable_web_page_preview=True,
         )
     except:
-        return await message.reply_text("» ғᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs.")
+        return await message.reply_text("» kiai ᴛᴏ sᴇɴᴅ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs.")
     if message.chat.type != ChatType.PRIVATE:
         await message.reply_text(
             "» ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘᴍ, ɪ'ᴠᴇ sᴇɴᴛ ᴛʜᴇ ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs ᴛʜᴇʀᴇ."

@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 kraar200
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -79,7 +79,7 @@ async def on_stream_end(pytgcalls, update: Update):
     else:
         process = await app.send_message(
             chat_id=chat_id,
-            text="» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ɴᴇxᴛ ᴛʀᴀᴄᴋ ғʀᴏᴍ ᴏ̨ᴜᴇᴜᴇ...",
+            text="» جارٍ تنزيل المسار التالي لقائمة الانتظار...",
         )
         title = get[0]["title"]
         duration = get[0]["duration"]

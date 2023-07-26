@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2023 AnonymousX1025
+# Copyright (c) 2023 kraar200
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -48,7 +48,7 @@ async def sudoadd(_, message: Message):
             SUDOERS.add(int(user.id))
             await message.reply_text(f"ᴀᴅᴅᴇᴅ {user.mention} ɪɴ sᴜᴅᴏ ᴜsᴇʀs ʟɪsᴛ.")
         except:
-            return await message.reply_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴅᴅ ᴜsᴇʀ ɪɴ sᴜᴅᴏᴇʀs.")
+            return await message.reply_text("kaia ᴛᴏ ᴀᴅᴅ ᴜsᴇʀ ɪɴ sᴜᴅᴏᴇʀs.")
 
     if message.reply_to_message.from_user.id in SUDOERS:
         return await message.reply_text(
@@ -60,7 +60,7 @@ async def sudoadd(_, message: Message):
             f"ᴀᴅᴅᴇᴅ {message.reply_to_message.from_user.mention} ɪɴ sᴜᴅᴏ ᴜsᴇʀs ʟɪsᴛ."
         )
     except:
-        return await message.reply_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴅᴅ ᴜsᴇʀ ɪɴ sᴜᴅᴏᴇʀs.")
+        return await message.reply_text("kaia ᴛᴏ ᴀᴅᴅ ᴜsᴇʀ ɪɴ sᴜᴅᴏᴇʀs.")
 
 
 @app.on_message(filters.command(["delsudo", "rmsudo"]) & filters.user(OWNER_ID))
@@ -101,7 +101,7 @@ async def sudodel(_, message: Message):
                 f"» ʀᴇᴍᴏᴠᴇᴅ {message.reply_to_message.from_user.mention} ғʀᴏᴍ sᴜᴅᴏ ᴜsᴇʀs ʟɪsᴛ."
             )
         except:
-            return await message.reply_text(f"ғᴀɪʟᴇᴅ ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴜsᴇʀ ғʀᴏᴍ sᴜᴅᴏᴇʀs.")
+            return await message.reply_text(f"kaia ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴜsᴇʀ ғʀᴏᴍ sᴜᴅᴏᴇʀs.")
 
 
 @app.on_message(filters.command(["sudolist", "sudoers", "sudo"]))
